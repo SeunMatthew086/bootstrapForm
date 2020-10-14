@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+    
+            <div class="d-flex flex-column m-auto" style="max-width: 400px;">
+                 <p class="font-weight-bold h2 mb-5 text-center text-primary">Cohort 2</p>   
+                <!-- Email -->
+                <div class="form-group pt-5">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                </div>
+
+                <!-- Password --> 
+                <div class="form-group"> 
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="inputPassword">
+                </div>
+
+                <!-- Button -->
+                <button onclick="onClickButton()" type="submit" class="btn btn-primary">Submit</button>
+
+            </div>
+
+        </div>
+            
+
+        <script>
+            let onClickButton = () => {
+                const emailField = document.querySelector('#inputEmail');
+                const passwordField = document.querySelector('#inputPassword');
+                console.log(emailField.value);
+                console.log(passwordField.value);
+            } 
+
+            
+        </script>
+        
+    </body>
+</html>
